@@ -32,13 +32,7 @@ pipeline{
                 deploy adapters: [tomcat9(credentialsId: 'tomcatdeployer', path: '', url: 'http://34.202.164.88:8009/')], contextPath: 'nov18', war: 'target/*war'
             }
         }
-        stage('notification'){
-            steps{
-                office365ConnectorSend color: 'blue', message: 'testing my pipeline notifications', status: 'done', webhookUrl: 'https://liontechacademy.webhook.office.com/webhookb2/7de6738b-f601-433e-b0ac-4a9e3b49e636@b290c85e-0692-4ada-8f25-2a3b60aca73e/JenkinsCI/2649683ccb704a958980a85413b48b0c/89f0fedb-4e4b-4e2a-b214-f3229d28627c'
-                
-            }
-        }
-
+       
 
 
 
