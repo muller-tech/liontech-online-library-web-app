@@ -4,7 +4,7 @@ pipeline{
         maven "maven3.9.5"
     }
     stages{
-        stage('scmclone'){
+        stage('clonecode4scm'){
             steps{
                 sh "echo 'this is declarative pipeline'"
                 git branch: 'nov18', url: 'https://github.com/muller-tech/liontech-online-library-web-app.git'
