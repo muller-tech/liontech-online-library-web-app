@@ -22,6 +22,11 @@ pipeline{
                 sh "mvn sonar:sonar"
             }
         }
+        stage('uploadtonexus'){
+            steps{
+                sh "mvn deploy"
+            }
+        }
 
 
 
