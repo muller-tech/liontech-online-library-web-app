@@ -11,7 +11,18 @@ pipeline{
 
             }
         }
+        stage('buildplustest'){
+            steps{
+                sh "mvn clean package"
+            }
+
+        }
+
+
+
+
     }
+
 
 
 
