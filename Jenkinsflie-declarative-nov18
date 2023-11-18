@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('clonecode4scm'){
             steps{
-                sh "echo 'this is declarative pipeline'"
+                sh "echo 'this is declarative pipelines'"
                 git branch: 'nov18', url: 'https://github.com/muller-tech/liontech-online-library-web-app.git'
 
             }
