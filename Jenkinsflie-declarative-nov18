@@ -17,6 +17,11 @@ pipeline{
             }
 
         }
+        stage('sonarqube'){
+            steps{
+                sh "sonar:sonar"
+            }
+        }
 
 
 
