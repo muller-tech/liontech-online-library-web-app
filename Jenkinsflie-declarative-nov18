@@ -1,16 +1,27 @@
 pipeline{
-   agent any
-   tools{
-    maven "maven3.9.5"
-}
-stage{
-    stage('scmclone'){
-        steps{
-            sh "echo 'this is declarative  pipeline'"
-            git branch: 'nov18', url: 'https://github.com/muller-tech/liontech-online-library-web-app.git'
+    agent any
+    tools{
+        maven "maven3.9.5"
     }
-}
-}
+    stages{
+        stage('scmclone'){
+            steps{
+                sh "echo 'this is declarative pipeline'"
+                git branch: 'nov18', url: 'https://github.com/muller-tech/liontech-online-library-web-app.git'
+
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
